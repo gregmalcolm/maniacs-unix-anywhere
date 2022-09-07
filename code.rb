@@ -1,3 +1,3 @@
 def find_unix_keywords
-  system('echo $(compgen -abck)')
+  `echo $(compgen -abck)`.split.uniq.map(&:to_sym)
 end
