@@ -3,8 +3,7 @@ def find_unix_keywords
 end
 
 def unix_keywords
-  find_unix_keywords
-  .select { |cmd| keyword.to_s =~ /^[a-z_]+$/ }
+  find_unix_keywords.select { |cmd| keyword.to_s =~ /^[a-z_]+$/ }
 end
 
 #find_unix_keywords.grep(/\[/)
