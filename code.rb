@@ -10,10 +10,11 @@ end
 
 @unix_keywords.each do |cmd|
   Kernel.define_method(cmd) do |*args|
-    puts "I can do #{cmd}"
+    system "#{cmd} #{args.join(' ')}"
   end
 end
 
 # ps
-# ls
-# printf
+# python
+# vim
+# sl
