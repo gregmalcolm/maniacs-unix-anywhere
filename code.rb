@@ -1,18 +1,11 @@
 @find_unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym)
 @unix_keywords = @find_unix_keywords.select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
-# def method_missing(name, *args)
-#   if @unix_keywords.include?(name)
-#     system name
-#   end
-# end
+Object.ancestors
+Kernel.singleton_methods
 
-def hello_is_real
-  "hi"
-end
-Object.instance_methods.grep(/hello/)
-
-def method_missing(name, *args)
-  puts name
-  super
+[:ps, :ls, :pwd].each do |cmd|
+  Kernel.define_method(cmd) do
+    puts "I can do #{cmd}"
+  end
 end
