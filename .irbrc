@@ -1,0 +1,5 @@
+IRB.conf[:HISTORY_FILE]='../tmp/irb_history'
+
+def reload!
+  load './code.rb'
+end
