@@ -15,7 +15,6 @@ end
 end
 
 # df
-# python
-# vim
+# top
 # ls
 # sl
