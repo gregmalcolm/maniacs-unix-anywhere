@@ -17,4 +17,5 @@ end
 # df
 # python
 # vim
+# ls
 # sl
