@@ -13,7 +13,6 @@ def spam(stuff)
 end
 
 Object.instance_methods
-Object.instance_methods.grep(/spam/)
 
-String.ancestors.include?(Object)
-Array.ancestors.include?(Object)
+String.ancestors.include?(Object) # true
+Array.ancestors.include?(Object) # true
