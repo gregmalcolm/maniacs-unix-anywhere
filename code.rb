@@ -6,3 +6,6 @@ def method_missing(name, *args)
     system name
   end
 end
+
+# self
+# self.class
