@@ -14,7 +14,7 @@ end
   end
 end
 
-# ps
+# df
 # python
 # vim
 # sl
