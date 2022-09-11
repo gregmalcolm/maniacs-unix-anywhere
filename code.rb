@@ -10,6 +10,7 @@
 def hi
   "Hello is real!"
 end
+Object.instance_methods
 Object.instance_methods.grep(/hello/)
 
 def method_missing(name, *args)
