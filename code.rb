@@ -6,6 +6,9 @@ def method_missing(name, *args)
   super
 end
 
+# String.ancestors
+# Array.ancestors
+
 # def spam(stuff)
 #   msg = stuff.to_s.upcase
 #   msg.size.times { puts stuff }
