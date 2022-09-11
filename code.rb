@@ -6,14 +6,14 @@ def method_missing(name, *args)
   super
 end
 
-# String.ancestors
-# Array.ancestors
+def spam(stuff)
+  msg = stuff.to_s.upcase
+  msg.size.times { puts stuff }
+  msg
+end
 
-# def spam(stuff)
-#   msg = stuff.to_s.upcase
-#   msg.size.times { puts stuff }
-#   msg
-# end
+Object.instance_methods
+Object.instance_methods.grep(/spam/)
 
-# Object.instance_methods
-# Object.instance_methods.grep(/spam/)
+String.ancestors.include?(Object)
+Array.ancestors.include?(Object)
