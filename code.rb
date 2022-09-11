@@ -7,8 +7,8 @@
 #   end
 # end
 
-def hello_is_real
-  "hi"
+def hi
+  "Hello is real!"
 end
 Object.instance_methods.grep(/hello/)
 
