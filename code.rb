@@ -6,13 +6,15 @@ def method_missing(name, *args)
   super
 end
 
-def spam(stuff)
-  msg = stuff.to_s.upcase
-  msg.size.times { puts stuff }
+def spam
+  msg = self.to_s.upcase
+  msg.size.times { puts msg }
   msg
 end
 
-Object.instance_methods
+"Buy Beam Benefits".spam
+42.spam
 
-String.ancestors.include?(Object) # true
-Array.ancestors.include?(Object) # true
+self.class.ancestors
+puts "I'M ON A KERNEL"
+Kernel.singleton_methods
