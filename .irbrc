@@ -4,6 +4,10 @@ def reload!
   load './code.rb'
 end
 
+def r
+  reload!
+end
+
 def n
   `./scripts/next`
 end
