@@ -1,4 +1,2 @@
-# compgen -abck
-# `ps`
-# `compgen -abck`
-# `echo $(compgen -abck)`
+# Unix
+compgen -abck
