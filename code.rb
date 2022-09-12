@@ -9,7 +9,7 @@ def spam
   msg
 end
 
-"Buy Beam Benefits".spam
+"Buy spam".spam
 42.spam
 
 self.class.ancestors
