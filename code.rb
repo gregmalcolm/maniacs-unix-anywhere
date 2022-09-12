@@ -3,7 +3,6 @@
   .select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
 def method_missing(name, *args)
-  if @unix_keywords.include?(name)
-    puts name
-  end
+  return puts name if @unix_keywords.include?(name)
+  super
 end
