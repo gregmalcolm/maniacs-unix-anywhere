@@ -3,9 +3,6 @@
 
 def method_missing(name, *args)
   if @unix_keywords.include?(name)
-    system name
+    puts name
   end
 end
-
-# self
-# self.class
