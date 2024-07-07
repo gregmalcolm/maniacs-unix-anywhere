@@ -9,8 +9,9 @@ def spam
   msg
 end
 
-"Buy spam".spam
-42.spam
+# Nowadays (Ruby 3.3) it's only accessibly privately
+"Buy spam".send(:spam)
+42.send(:spam)
 
 self.class.ancestors
 puts "I'M ON A KERNEL"
