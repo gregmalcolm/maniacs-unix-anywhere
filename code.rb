@@ -1,5 +1,5 @@
 def method_missing(name, *args)
-  puts name
+  puts name unless name.include?(%w[to_ary])
   super
 end
 
