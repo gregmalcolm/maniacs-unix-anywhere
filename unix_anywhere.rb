@@ -1,2 +1,2 @@
 # Unix
-compgen -abck
+# compgen -abck
