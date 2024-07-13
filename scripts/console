@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+irb -r './unix_anywhere.rb'
