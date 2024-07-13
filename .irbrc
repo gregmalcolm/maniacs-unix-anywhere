@@ -1,7 +1,7 @@
 IRB.conf[:HISTORY_FILE]='../tmp/irb_history'
 
 def reload!
-  load './code.rb'
+  load './unix_anywhere.rb'
 end
 
 def r
