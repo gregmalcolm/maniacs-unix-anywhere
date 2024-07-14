@@ -14,4 +14,8 @@
 #   end
 # end
 
-#ls "-lah"
+# df
+# top
+# ls
+# sl
+# ls -lah
