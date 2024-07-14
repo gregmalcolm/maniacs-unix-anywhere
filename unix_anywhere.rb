@@ -14,15 +14,15 @@ end
 
 #spam
 
-self
-self.class
-"CRB".class
-"CRB".class.superclass
-[].class
-[].class.superclass
-42.class
-42.class.superclass
-42.class.superclass.superclass
+# self
+# self.class
+# "CRB".class
+# "CRB".class.superclass
+# [].class
+# [].class.superclass
+# 42.class
+# 42.class.superclass
+# 42.class.superclass.superclass
 
 
 
