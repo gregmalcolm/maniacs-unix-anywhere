@@ -6,7 +6,7 @@
 
 def spam
   recipient = "CRB"
-  msg.size.times do 
+  recipient.size.times do 
     puts "Hello #{recipient}"
   end
   recipient
