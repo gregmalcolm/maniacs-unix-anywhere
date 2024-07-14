@@ -1,5 +1,5 @@
 #
-# Experiment: Remove support for unix commands tha clash with Kernel methods
+# Remove kernel methods from unix commands list
 #
 
 @unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym).select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
@@ -8,10 +8,6 @@
     Kernel.respond_to?(cmd)
   end
 
-@allowed_unix_keywords.each do |cmd|
-  Kernel.define_method(cmd) do |*args|
-    system cmd.to_s
-  end
-end
-
-#ls "-lah"
+# @allowed_unix_keywords.include?(:chmod)
+# @allowed_unix_keywords.include?(:eval)
+# @allowed_unix_keywords.include?(:printf)
