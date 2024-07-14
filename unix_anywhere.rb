@@ -10,6 +10,8 @@ def spam
   msg
 end
 
+spam
+
 # "Buy spam".send(:spam)
 # 42.send(:spam)
 
@@ -23,16 +25,16 @@ end
 #   super
 # end
 
-def spam
-  msg = self.to_s.upcase
-  msg.size.times { puts msg }
-  msg
-end
+# def spam
+#   msg = self.to_s.upcase
+#   msg.size.times { puts msg }
+#   msg
+# end
 
-# Nowadays (Ruby 3.3) it's only accessibly privately
-"Buy spam".send(:spam)
-42.send(:spam)
+# # Nowadays (Ruby 3.3) it's only accessibly privately
+# "Buy spam".send(:spam)
+# 42.send(:spam)
 
-self.class.ancestors
-puts "I'M ON A KERNEL"
-Kernel.singleton_methods
+# self.class.ancestors
+# puts "I'M ON A KERNEL"
+# Kernel.singleton_methods
