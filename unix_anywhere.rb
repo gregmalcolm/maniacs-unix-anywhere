@@ -8,10 +8,10 @@
     Kernel.respond_to?(cmd)
   end
 
-@allowed_unix_keywords.each do |cmd|
-  Kernel.define_method(cmd) do |*args|
-    system cmd.to_s
-  end
-end
+# @allowed_unix_keywords.each do |cmd|
+#   Kernel.define_method(cmd) do |*args|
+#     system cmd.to_s
+#   end
+# end
 
 #ls "-lah"
