@@ -5,11 +5,11 @@
 @unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym).select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
 def spam
-  msg = "CRB"
+  recipient = "CRB"
   msg.size.times do 
-    puts "Hello #{msg}"
+    puts "Hello #{recipient}"
   end
-  msg
+  recipient
 end
 
 #spam
