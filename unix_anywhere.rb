@@ -7,7 +7,7 @@
     Kernel.respond_to?(cmd)
   end
 
-@unix_keywords.each do |cmd|
+@filtered_unix_keywords.each do |cmd|
   Kernel.define_method(cmd) do |*args|
     system "#{cmd} #{args.join(' ')}"
   end
