@@ -1,16 +1,18 @@
 #
-# Adding a simple message to irb
+# Adding a simple spam message to irb
 #
 
 @unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym).select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
-def greet
+def spam
   msg = "CRB"
-  puts "Hello #{msg}"
+  msg.size.times do 
+    puts "Hello #{msg}"
+  end
   msg
 end
 
-#greet
+#spam
 
 # "Buy spam".send(:spam)
 # 42.send(:spam)
