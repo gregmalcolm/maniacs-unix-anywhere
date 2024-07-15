@@ -9,7 +9,6 @@ def spam
   recipient.size.times do 
     puts "Hello #{recipient}"
   end
-  recipient
 end
 
 #spam
