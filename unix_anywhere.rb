@@ -10,7 +10,8 @@
 
 @allowed_unix_keywords.each do |cmd|
   Kernel.define_method(cmd) do |*args|
-    system cmd.to_s
+    puts "I can do #{cmd} better than you"
+    #system cmd.to_s
   end
 end
 
