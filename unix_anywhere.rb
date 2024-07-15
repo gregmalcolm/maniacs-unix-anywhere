@@ -4,9 +4,11 @@
 
 @unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym).select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
-def method_missing(name, *args)
-  puts name name.include?(@unix_keywords)
-  super
+class Object
+  def method_missing(name, *args)
+    puts name if name.include?(@unix_keywords)
+    super
+  end
 end
 
 # def spam
