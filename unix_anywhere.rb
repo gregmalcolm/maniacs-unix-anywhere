@@ -21,3 +21,8 @@
 #     super
 #   end
 # end
+
+# cmd = "anything"
+# Kernel.define_method(cmd) do |*args|
+#   puts "I can do #{cmd} better than you"
+# end
