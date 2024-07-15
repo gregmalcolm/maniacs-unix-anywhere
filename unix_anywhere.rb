@@ -6,8 +6,7 @@
 
 def greet
   recipient = "CRB"
-  puts "Hello #{recipient}"
-  recipient
+  puts "\nHello #{recipient}"
 end
 
 #greet
