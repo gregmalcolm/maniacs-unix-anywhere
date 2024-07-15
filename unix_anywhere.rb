@@ -7,7 +7,7 @@
 def spam
   recipient = self.to_s
   recipient.size.times do 
-      puts "Hello #{msg}"
+      puts "Hello #{recipient}"
   end
 end
 
