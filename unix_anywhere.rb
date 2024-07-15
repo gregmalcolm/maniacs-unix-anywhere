@@ -10,17 +10,3 @@ class Object
     super
   end
 end
-
-# def spam
-#   msg = self.to_s.upcase
-#   msg.size.times { puts msg }
-#   msg
-# end
-
-# # Nowadays (Ruby 3.3) it's only accessibly privately
-# "Buy spam".send(:spam)
-# 42.send(:spam)
-
-# self.class.ancestors
-# puts "I'M ON A KERNEL"
-# Kernel.singleton_methods
