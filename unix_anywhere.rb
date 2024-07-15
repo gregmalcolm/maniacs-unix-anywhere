@@ -4,12 +4,14 @@
 
 @unix_keywords = `echo $(compgen -abck)`.split.uniq.map(&:to_sym).select { |cmd| cmd.to_s =~ /^[a-z_]+$/ }
 
-def spam
-  msg = self.to_s
-  msg.size.times do 
-    puts "Hello #{msg}"
+class Object
+  def spam
+    msg = self.to_s
+    msg.size.times do 
+        puts "Hello #{msg}"
+    end
+    msg
   end
-  msg
 end
 
 #spam
