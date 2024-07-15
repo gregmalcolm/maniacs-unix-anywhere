@@ -2,7 +2,6 @@
 # Which unix commands do we want to allow?
 #
 
-
 # puts `echo $(compgen -abck)`
 #   .split
 #   .uniq
